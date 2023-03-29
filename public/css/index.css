@@ -1,11 +1,31 @@
-.color-blue{
-    color:blue;
+/*Estilos da pagina index*/
+
+main {
+    text-align:center;
+
+
 }
 
-.color-red ul li a {
-    color:red;
+.cover-container figure img{
+    width: 100%;
 }
 
-#link-home{
-    color: rgb(106, 31, 218);
+main h2.title {
+    font-size: 1.2em;
+}
+
+main section abbr {
+    color:#25cbd3;
+
+}
+
+@media screen and (min-width: 992px) {
+    .cover-container {
+        width:40%;
+    }
+
+    .cover-container figure img {
+        display: inline-block;
+    }
+    
 }

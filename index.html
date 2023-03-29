@@ -1,42 +1,51 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Devaria é uma formação para pessoas que não possuem conhecimento em programação e querem se tornar programadores, aulas são ao vivo, desenvolvimento de sistemas "> 
-    <meta name="keywords" content="curso, treinamento, programação, desenvolvimento, web" >
-    <meta name="author" content="Wilton Brito">
-    <link rel="stylesheet" href="public/css/index.css"/>
-    <title>Óla mundo!</title>
+    <head>
+        <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="keywords" content="curso, treinamento, programação, desenvolvimento, web" >
+          <meta name="author" content="Wilton Brito">
+          <meta name="description" content="A Devaria é uma formação para pessoas que não possuem conhecimento em programação e querem se tornar programadores, aulas são ao vivo, desenvolvimento de sistemas "> 
+            <link rel="stylesheet" href="public/css/index.css"/>
+            <link rel="stylesheet" href="public/css/devaria.css">
+            <link rel="stylesheet" href="public/css/header.css">
+            <link rel="stylesheet" href="public/css/footer.css">
+            <title>Óla mundo!</title>
 
-
-</head>
-
+    </head>
 <body>
     <header>
-        <h1 class="color-blue">Óla mundo ! essa é a minha primeira página WEB!</h1>
-        <nav class="color-red">
+        <a href="index.html" class="link-logo">
+            <img src="public/logo-devaria.svg" alt="Logo devaria"/>
+        </a>
+        <nav class="menu">
             <ul>
-                <li><a href="index.html" id="link-home">Home</a></li>
                 <li><a href="Professores.html">Professores</a></li>
                 <li ><a href="FaleConosco.html">FaleConosco</a></li>
                 <li ><a href="Devstar.html">DevStar</a></li>
-               
             </ul>
         </nav>
     </header>
-
+    
     <main>
-        <section>
-            <img src="https://noticiasdopara.com.br/wp-content/uploads/2020/03/maxresdefault-768x432.jpg" width="500"  alt="Devaria óla mundo!">
-            <br>
-            <img src="public/cartoon-map-clipart-2.png" width="300" alt="Cartoon hello word!">
+        <h1 class="title">Óla mundo ! essa é a minha primeira página WEB!</h1>
+
+        <section class="cover-container"></section>
+            <figure>
+                <img src="public/fotohome.png" alt="Cartoon hello word!">
+                <figcaption>Foto de capa Devaria! </figcaption>             
+            </figure>
+        </secção>
+        <section class="section-video"></section>
+            <video width="320" height="240" controls="controls">
+                <source src="public/videos/anuncio.mp4" type="video/mp4">
+            </video>
         </section>
-        <br>
-        <section>
-            <h2> Para os <abbr title="Developers">DEVs</abbr> saberem, a Devaria usa <abbr title="Microsoft">MS</abbr>  Azure</h2>
-            <blockquote cite="https://azure.microsoft.com/pt-br/">
+
+            <section class="section-azure ">
+                <h2 class="title"> Para os <abbr title="Developers">DEVs</abbr> saberem, a Devaria usa <abbr title="Microsoft">MS</abbr>  Azure</h2>
+                <blockquote class="text-justify" cite="https://azure.microsoft.com/pt-br/">
                 Resolva os problemas de negócios com combinações comprovadamente eficientes de 
                 produtos e serviços do Azure.
             </blockquote>
@@ -46,11 +55,7 @@
     <footer>
        <section>
             <span>contato@eiltondev.com.br</span>
-            <br>
-            <span>Conheça nosso canal</span>
-            <br>
-             <iframe width="200" src="https://www.youtube-nocookie.com/embed/dcEvdxeWHAs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </span>
+            <span>Conheça nosso canal</span>   
         </section>
     </footer>
 </body>
