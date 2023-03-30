@@ -1,0 +1,22 @@
+/*Estilos aplicados a Professores*/
+
+.content-container{
+    padding: 15px;
+
+}
+
+.content-container h2.title{
+    font-size: 1.5em;
+
+}
+
+.content-container > div img{
+    width: 85%;
+    border-radius: 20px;
+    border: 5px double;
+
+}
+
+@media  and( min:width) {
+    
+}

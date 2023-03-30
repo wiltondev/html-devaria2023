@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/css/devaria.css">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/fale-conosco.css">
     <title>Fale conosco.</title>
 
     
@@ -15,7 +16,7 @@
 <body>
     <header>
         <a href="index.html" class="link-logo">
-            <img src="public/logo-devaria.svg" alt="Logo devaria"/>
+            <img src="public/fotos/logo-devaria.svg" alt="Logo devaria"/>
         </a>
         <nav class="menu">
             <ul>
@@ -26,33 +27,43 @@
         </nav>
     </header>
     <main>
-        <h1 class="title">Óla mundo ! essa é a minha primeira página WEB!</h1>
-        <H2>Para entrar en contato com a Devaria, preencha os campos abaixo e clique em enviar.</H2>
-        <form action="index.html">
-            <p>
-                <label>Nome: </label><input type="text" nome="Nome" maxlength="70">
-            </p>
-            <p>
-                <label >E-mail: </label><input type="email" name="Email" id="">
-            </p>
-            <p>
-                <label>Comentários: </label><textarea name="Comentario" cols="50" rows="4"></textarea>
-            </p>
-            <p>
-                <label>Sexo</label>
-                <input type="radio" name="Sexo"><label>Feminino</label>
-                <input type="radio" name="Sexo"><label>Masculino</label>
-            </p>
-            <p>
-               <Select name="Conheceu">
-                <option selected value="" >YouTube</option>
-                <option value="" >Instagram</option>
-                <option value="">Amigos</option>
-                <option value="">Google</option>
-                <option value="">Facebook</option>
-                <option value="">Outros</option>
-               </Select> 
-            </p>
+        <h1 class="title text-center">Fale com a devaria através dessa página</h1>
+        <h2 class="sub-title text-center">Para entrar em contato preencha os campos abaixo e clique em enviar</h2>
+        <form action="index.html" class="contact-form margin-horizontal-20px">
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="Nome" maxlength="70" required="true" />
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input type="text" name="Email" maxlength="150" required="true" />
+            </div>
+            <div>
+                <label>Comentários:</label>
+                <textarea name="Comentario" cols="50" rows="4" required="true"></textarea>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" name="Sexo" /><span>Feminino</span>
+                <input type="radio" name="Sexo" /><span>Masculino</span>
+            </div>
+            <div>
+                <label>Aonde você conheceu a Devaria?</label>
+                <select name="Conheceu">
+                    <option>Youtube</option>
+                    <option>Amigos</option>
+                    <option selected>Google</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="Aceite" />
+                <span>Aceito receber novidades da Devaria</span>
+            </div>
+            <div>
+                <input type="submit" name="Enviar" value="Enviar" />
+                <input type="reset" name="Limpar" value="Limpar" />
+            </div>
         </form>
     </main>
     <footer>

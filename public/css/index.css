@@ -1,31 +1,33 @@
-/*Estilos da pagina index*/
-
-main {
-    text-align:center;
-
-
+/* Estilos da pagina index */
+main{
+    text-align: center;
+}
+.cover-container figure img {
+    width:100%;
 }
 
-.cover-container figure img{
-    width: 100%;
-}
-
-main h2.title {
+main h3.title {
     font-size: 1.2em;
 }
 
 main section abbr {
-    color:#25cbd3;
-
+    color: #25cbd3;
 }
 
 @media screen and (min-width: 992px) {
     .cover-container {
-        width:40%;
+        width: 40%;
     }
 
-    .cover-container figure img {
-        display: inline-block;
+    .cover-container,
+    .section-video{
+        display:inline-block;
     }
-    
+
+    main .section-azure blockquote {
+        width:70%;
+        margin: auto;
+        margin-bottom: 25px;
+        text-align: center;
+    }
 }
